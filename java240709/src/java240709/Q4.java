@@ -18,17 +18,18 @@ public class Q4 {
 		int num2 =getNum("숫자 2 입력:", scan);
 		int num3 =getNum("숫자 3 입력:", scan);
 		
-		int max = Math.getNum(num1, num2, num3);
+		int max1 = Math.max(num1, num2);
+		int max2 = Math.max(max1, num3);
 		
-//		if (num2 > num3) {
+//		if (num2  num3) {
 //			System.out.println(x);
-//		} else if (num3 < num1) {
+//		} else if (num3  num1) {
 //			System.out.println(y);
 //		} else {
 //			System.out.println(0);
 //		}
 //		
-		System.out.println(max);
+		System.out.println(max2);
 		
 //		if () {
 //			System.out.println(num1);
