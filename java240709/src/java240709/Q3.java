@@ -1,3 +1,4 @@
+// 두개의 값을 받아서 큰 수를 출력하세요.(단 같으면 0으로 출력)
 package java240709;
 
 import java.util.Scanner;

@@ -1,0 +1,59 @@
+도커에 우분투 설치
+docker run -it --name first-ubuntu ubuntu /bin/bash
+
+docker run --name 중요
+
+빠져나오기
+exit
+
+다시 들어가기
+docker exec -it first-ubuntu /bin/bash
+
+apt-get update
+
+apt-get install vim -y
+
+a, i (편집명령)
+esc 키으로 편집모드를 빠져나감
+:wq (저장 후 탈출) :q! (저장안하고 탈출)
+
+apt-get install default-jdk -y
+
+java -version
+
+public class HelloWorld {
+        public static void main(String[] ar) {
+                System.out.println("Hello World");
+        }
+}
+
+javac HelloWorld.java
+
+java HelloWorld
+
+exit
+
+docker cp first-ubuntu:/home/ubuntu/HelloWorld.java .
+
+docker cp HelloWorld.java first-ubuntu:/home/ubuntu/
+public class Hello2030 {
+public static void main(String[] ar) {
+                   System.out.println("Hello JAVA!");
+          }
+}
+------------------------------------------------------------------------
+도커 시작(확인용)
+docker ps -a
+
+도커지우기 지우기 순서
+1. docker stop 아이디  이걸 먼저하고 지우기
+2. docker rm 아이디
+
+도커 이미지 보기
+docker image ls
+
+도커 이미지 지우기
+docker image rm 아이디 앞글자 두개
+
+
+
