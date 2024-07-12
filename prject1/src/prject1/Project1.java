@@ -1,13 +1,12 @@
-package java240711;
+package prject1;
 
-import java.lang.reflect.Member;
 import java.util.Scanner;
 
 public class Project1 {
 
 	public static void main(String[] args) {
+		Member member = null;
 		Scanner scanner = new Scanner(System.in);
-		Member member; 
 		boolean run = true;
 		while (run) {
 			System.out.println("-------------------------------------");
@@ -24,9 +23,8 @@ public class Project1 {
 				String name = scanner.nextLine(); // name 변수의 값 입력
 				System.out.print("패스워드:");
 				String strPassword = scanner.nextLine();//패스워드입력
-				int password = Integer.parseInt(strPassword); // stpassword값을 정수로 변환
-				if (name.equals("java")) {
-					if (password == 12345) {
+				if (name.equals(member.name)) {
+					if (strPassword.equals(member.ssn)) {
 						System.out.println("로그인 성공");
 					} else {
 						System.out.println("로그인 실패:패스워드가 틀림");
@@ -51,14 +49,13 @@ public class Project1 {
 				System.out.println("1. 이름: " + name2);
 				System.out.println("2. 주민번호 앞 6자리: " + ssn); 
 				System.out.println("3. 전화번호: " + tel);
-                // 객체생성
-                member = new Member();
-                break;
+				// 객체 생성
+				member = new Member(name2, ssn, tel);
+				break;
 			case 3:
 				// 예금 출금
 				System.out.println("예금 출금");
 				boolean run2 = true;
-				int balance = 0;
 				
 				while (run2) {
 					System.out.println("-------------------------------------");
@@ -69,15 +66,15 @@ public class Project1 {
 					switch (menuNum2) {
 					case 1:
 						System.out.print("예금액> ");
-						balance += Integer.parseInt(scanner.nextLine());
+						member.balance += Integer.parseInt(scanner.nextLine());
 						break;
 					case 2:
 						System.out.print("출금액> ");
-						balance -= Integer.parseInt(scanner.nextLine());
+						member.balance -= Integer.parseInt(scanner.nextLine());
 						break;
 					case 3:
 						System.out.print("잔고> ");
-						System.out.println(balance);
+						System.out.println(member.balance);
 						break;
 					case 4:
 						run2 = false;
@@ -85,14 +82,13 @@ public class Project1 {
 					}
 					System.out.println();
 				}
-				System.out.println("프로그램 종료");
+				System.out.println("예금/출금 프로그램 종료");
 				break;
 			case 4:
 				run = false;
 				break;
 			}
 		}
-		System.out.println("프로그램 종료");
+		System.out.println("프로그램 전체 종료");
 	}
 }
-	

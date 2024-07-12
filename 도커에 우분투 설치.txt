@@ -55,5 +55,9 @@ docker image ls
 도커 이미지 지우기
 docker image rm 아이디 앞글자 두개
 
+docker rm $(docker ps -aq) 한번에 지우기
+
+docker run --name mysql0711 -p 3306:3306
+뒤에쓴 3306는 컨테이너 밖에 있는 건 외부랑 매칭
 
 
