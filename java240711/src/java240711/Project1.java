@@ -52,7 +52,7 @@ public class Project1 {
 				System.out.println("2. 주민번호 앞 6자리: " + ssn); 
 				System.out.println("3. 전화번호: " + tel);
                 // 객체생성
-                member = new Member();
+//                member = new Member();
                 break;
 			case 3:
 				// 예금 출금

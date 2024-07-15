@@ -19,7 +19,7 @@ public class BubbleEx {
 					int tmp = a[j];
 					a[j] = a[j-1];
 					a[j-1] = tmp;
-					System.out.print("\t교환(j-1="+(j-1)=", j="+j+")");
+//					System.out.print("\t교환(j-1="+(j-1)=", j="+j+")");
 					printArr(a); 
 				}
 			}
@@ -37,4 +37,4 @@ public class BubbleEx {
 
 	}
 
-}
+//}
