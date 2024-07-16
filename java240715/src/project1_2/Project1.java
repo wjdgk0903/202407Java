@@ -57,7 +57,8 @@ public class Project1 {
 				
 				
 				
-//				int find = -1;  // 찾기 전 또는 못찾았을 때
+				String find;
+				//				int find = -1;  // 찾기 전 또는 못찾았을 때
 //				
 //				for (int i=0; i < list.size; i++) {
 //					if (list.get(i).name.equals(name) && list.get(i).ssn.equals(strPassword)) {
@@ -66,7 +67,7 @@ public class Project1 {
 //						break;
 //					}
 //				}
-				System.out.println("인덱스:"+find);
+//				System.out.println("인덱스:"+find);
 				System.out.println(member);
 				
 //				if (name.equals(member.name)) {
@@ -96,7 +97,7 @@ public class Project1 {
 				System.out.println("2. 주민번호 앞 6자리: " + ssn); 
 				System.out.println("3. 전화번호: " + tel);
 				// 객체 생성
-				list[memCnt++] = new Member(name2, ssn, tel);
+//				list[memCnt++] = new Member(name2, ssn, tel);
 				
 				break;
 			case 3:
