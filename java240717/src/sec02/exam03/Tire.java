@@ -10,10 +10,6 @@ public class Tire {
 		this.maxRotation = maxRotation;
 	}
 
-	public Tire(String location2, int maxRotation2) {
-		// TODO Auto-generated constructor stub
-	}
-
 	public boolean roll() {
 		++accumulatedRotation;		
 		if(accumulatedRotation < maxRotation) {

@@ -28,9 +28,9 @@ public class Cal extends JFrame{
 	      con.setLayout(new FlowLayout());
 	      
 	      jp1.add(la1);
-	      con.add(jp1, BorderLayout.NORTH);
+//	      con.add(jp1, BorderLayout.NORTH);
 	      jp2.add(la2);
-	      con.add(jp2, BorderLayout.SOUTH);
+//	      con.add(jp2, BorderLayout.SOUTH);
 //	      con.add(la1); con.add(tf1); con.add(tf2);
 //	      con.add(jb1); con.add(jb2); con.add(jb3); con.add(jb4); 
 //	      con.add(la2);

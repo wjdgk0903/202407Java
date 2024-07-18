@@ -2,9 +2,7 @@ package p303;
 
 public class Person {
 	final String nation = "Korea";
-	static final double PI = 3.121592;
-	String ssn;
-	String name;
+	static final double PI = 3.141592;
 	
 	public static void main(String[] ar) {
 		Person p1 = new Person();
@@ -12,5 +10,4 @@ public class Person {
 //		PI = 3.14;
 		System.out.println(p1.nation);
 	}
-
 }

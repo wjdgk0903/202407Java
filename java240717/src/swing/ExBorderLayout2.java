@@ -2,7 +2,6 @@ package swing;
 
 import javax.swing.JFrame;
 
-import java.awt.BorderLayout;
 import java.awt.Container;
 
 
