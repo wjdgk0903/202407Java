@@ -37,7 +37,7 @@ public class MyFrame extends JFrame {
 		public void run() {
 			while (true) {
 				String[] path = {"wak1.gif", "wak2.gif"};
-				for 
+//				for 
 			}
 			
 		}
